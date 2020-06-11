@@ -173,7 +173,7 @@ namespace MigraDoc.DocumentObjectModel
         /// <summary>
         /// Gets the effective page width, depending on the Orientation this will either be the height or the width.
         /// </summary>
-        internal Unit EffectivePageWidth
+        public Unit EffectivePageWidth
         {
             get { return IsLandscape ? PageHeight : PageWidth; }
         }
@@ -186,8 +186,7 @@ namespace MigraDoc.DocumentObjectModel
             get { return _startingNumber.Value; }
             set { _startingNumber.Value = value; }
         }
-        [DV]
-        internal NInt _startingNumber = NInt.NullValue;
+        [DV] public NInt _startingNumber = NInt.NullValue;
 
         /// <summary>
         /// Gets or sets the page height. If Orientation is set to Landscape, the PageHeight specifies the width of the page.
@@ -197,13 +196,12 @@ namespace MigraDoc.DocumentObjectModel
             get { return _pageHeight; }
             set { _pageHeight = value; }
         }
-        [DV]
-        internal Unit _pageHeight = Unit.NullValue;
+        [DV] public Unit _pageHeight = Unit.NullValue;
 
         /// <summary>
         /// Gets the effective page height, depending on the Orientation this will either be the height or the width.
         /// </summary>
-        internal Unit EffectivePageHeight
+        public Unit EffectivePageHeight
         {
             get { return IsLandscape ? PageWidth : PageHeight; }
         }
@@ -216,8 +214,7 @@ namespace MigraDoc.DocumentObjectModel
             get { return _topMargin; }
             set { _topMargin = value; }
         }
-        [DV]
-        internal Unit _topMargin = Unit.NullValue;
+        [DV] public Unit _topMargin = Unit.NullValue;
 
         /// <summary>
         /// Gets or sets the bottom margin of the pages in the section.
@@ -227,8 +224,7 @@ namespace MigraDoc.DocumentObjectModel
             get { return _bottomMargin; }
             set { _bottomMargin = value; }
         }
-        [DV]
-        internal Unit _bottomMargin = Unit.NullValue;
+        [DV] public Unit _bottomMargin = Unit.NullValue;
 
         /// <summary>
         /// Gets or sets the left margin of the pages in the section.
@@ -238,8 +234,7 @@ namespace MigraDoc.DocumentObjectModel
             get { return _leftMargin; }
             set { _leftMargin = value; }
         }
-        [DV]
-        internal Unit _leftMargin = Unit.NullValue;
+        [DV] public Unit _leftMargin = Unit.NullValue;
 
         /// <summary>
         /// Gets or sets the right margin of the pages in the section.

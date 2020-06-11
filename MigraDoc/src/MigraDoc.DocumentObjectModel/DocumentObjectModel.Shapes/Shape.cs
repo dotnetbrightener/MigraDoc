@@ -182,8 +182,7 @@ namespace MigraDoc.DocumentObjectModel.Shapes
             get { return _height; }
             set { _height = value; }
         }
-        [DV]
-        internal Unit _height = Unit.NullValue;
+        [DV] public Unit _height = Unit.NullValue;
 
         /// <summary>
         /// Gets or sets the width of the shape.
@@ -193,8 +192,7 @@ namespace MigraDoc.DocumentObjectModel.Shapes
             get { return _width; }
             set { _width = value; }
         }
-        [DV]
-        internal Unit _width = Unit.NullValue;
+        [DV] public Unit _width = Unit.NullValue;
         #endregion
 
         #region Internal

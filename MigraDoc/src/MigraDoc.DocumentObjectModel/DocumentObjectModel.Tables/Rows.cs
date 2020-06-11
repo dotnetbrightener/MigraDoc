@@ -112,8 +112,7 @@ namespace MigraDoc.DocumentObjectModel.Tables
             get { return _leftIndent; }
             set { _leftIndent = value; }
         }
-        [DV]
-        internal Unit _leftIndent = Unit.NullValue;
+        [DV] public Unit _leftIndent = Unit.NullValue;
 
         /// <summary>
         /// Gets or sets the default vertical alignment for all rows.
@@ -123,8 +122,7 @@ namespace MigraDoc.DocumentObjectModel.Tables
             get { return (VerticalAlignment)_verticalAlignment.Value; }
             set { _verticalAlignment.Value = (int)value; }
         }
-        [DV(Type = typeof(VerticalAlignment))]
-        internal NEnum _verticalAlignment = NEnum.NullValue(typeof(VerticalAlignment));
+        [DV(Type = typeof(VerticalAlignment))] public NEnum _verticalAlignment = NEnum.NullValue(typeof(VerticalAlignment));
 
         /// <summary>
         /// Gets or sets the height of the rows.

@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Version>3.0.0.0</Version>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <DefineConstants>$(DefineConstants);CORE;CORE_WITH_GDI;WPF</DefineConstants>
+    <AssemblyName>MigraDoc.Rendering</AssemblyName>
+    <PackageId>MigraDoc.Rendering</PackageId>
+    <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
+    <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <GenerateAssemblyCopyrightAttribute>false</GenerateAssemblyCopyrightAttribute>
+    <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
+    <RootNamespace>MigraDoc.Rendering</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Properties\**" />
+    <Compile Remove="Rendering.Forms\**" />
+    <Compile Remove="Rendering.Windows\**" />
+    <EmbeddedResource Remove="Properties\**" />
+    <EmbeddedResource Remove="Rendering.Forms\**" />
+    <EmbeddedResource Remove="Rendering.Windows\**" />
+    <None Remove="Properties\**" />
+    <None Remove="Rendering.Forms\**" />
+    <None Remove="Rendering.Windows\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Drawing.Common" Version="4.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\PDFsharp\src\PdfSharp.Charting\PdfSharp.Charting(NetCore).csproj" />
+    <ProjectReference Include="..\..\..\PDFsharp\src\PdfSharp\PdfSharp(NetCore).csproj" />
+    <ProjectReference Include="..\MigraDoc.DocumentObjectModel\MigraDoc.DocumentObjectModel(NetCore).csproj" />
+  </ItemGroup>
+
+</Project>

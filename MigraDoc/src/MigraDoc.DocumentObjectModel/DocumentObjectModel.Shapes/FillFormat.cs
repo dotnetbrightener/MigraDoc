@@ -69,8 +69,7 @@ namespace MigraDoc.DocumentObjectModel.Shapes
             get { return _color; }
             set { _color = value; }
         }
-        [DV]
-        internal Color _color = Color.Empty;
+        [DV] public Color _color = Color.Empty;
 
         /// <summary>
         /// Gets or sets a value indicating whether the background color should be visible.
@@ -80,8 +79,7 @@ namespace MigraDoc.DocumentObjectModel.Shapes
             get { return _visible.Value; }
             set { _visible.Value = value; }
         }
-        [DV]
-        internal NBool _visible = NBool.NullValue;
+        [DV] public NBool _visible = NBool.NullValue;
         #endregion
 
         #region Internal

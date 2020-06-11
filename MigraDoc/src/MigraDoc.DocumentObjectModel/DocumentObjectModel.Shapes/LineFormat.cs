@@ -69,8 +69,7 @@ namespace MigraDoc.DocumentObjectModel.Shapes
             get { return _visible.Value; }
             set { _visible.Value = value; }
         }
-        [DV]
-        internal NBool _visible = NBool.NullValue;
+        [DV] public NBool _visible = NBool.NullValue;
 
         /// <summary>
         /// Gets or sets the width of the line in Unit.
@@ -80,8 +79,7 @@ namespace MigraDoc.DocumentObjectModel.Shapes
             get { return _width; }
             set { _width = value; }
         }
-        [DV]
-        internal Unit _width = Unit.NullValue;
+        [DV] public Unit _width = Unit.NullValue;
 
         /// <summary>
         /// Gets or sets the color of the line.
@@ -91,8 +89,7 @@ namespace MigraDoc.DocumentObjectModel.Shapes
             get { return _color; }
             set { _color = value; }
         }
-        [DV]
-        internal Color _color = Color.Empty;
+        [DV] public Color _color = Color.Empty;
 
         /// <summary>
         /// Gets or sets the dash style of the line.
@@ -113,8 +110,7 @@ namespace MigraDoc.DocumentObjectModel.Shapes
             get { return (LineStyle)_style.Value; }
             set { _style.Value = (int)value; }
         }
-        [DV(Type = typeof(LineStyle))]
-        internal NEnum _style = NEnum.NullValue(typeof(LineStyle));
+        [DV(Type = typeof(LineStyle))] public NEnum _style = NEnum.NullValue(typeof(LineStyle));
         #endregion
 
         #region Internal

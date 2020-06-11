@@ -220,8 +220,7 @@ namespace MigraDoc.DocumentObjectModel
             get { return _defaultTabStop; }
             set { _defaultTabStop = value; }
         }
-        [DV]
-        internal Unit _defaultTabStop = Unit.NullValue;
+        [DV] public Unit _defaultTabStop = Unit.NullValue;
 
         /// <summary>
         /// Gets the default page setup.

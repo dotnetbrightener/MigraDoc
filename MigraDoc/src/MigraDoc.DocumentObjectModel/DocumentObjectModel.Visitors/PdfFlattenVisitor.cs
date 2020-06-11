@@ -37,7 +37,7 @@ namespace MigraDoc.DocumentObjectModel.Visitors
     /// <summary>
     /// Flattens a document for PDF rendering.
     /// </summary>
-    internal class PdfFlattenVisitor : VisitorBase
+    public class PdfFlattenVisitor : VisitorBase
     {
         /// <summary>
         /// Initializes a new instance of the PdfFlattenVisitor class.

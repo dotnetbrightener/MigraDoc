@@ -302,8 +302,7 @@ namespace MigraDoc.DocumentObjectModel.Tables
                 _borders = value;
             }
         }
-        [DV]
-        internal Borders _borders;
+        [DV] public Borders _borders;
 
         /// <summary>
         /// Gets the shading object.

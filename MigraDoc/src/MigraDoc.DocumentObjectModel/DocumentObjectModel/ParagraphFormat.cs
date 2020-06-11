@@ -176,8 +176,7 @@ namespace MigraDoc.DocumentObjectModel
                 _borders = value;
             }
         }
-        [DV]
-        internal Borders _borders;
+        [DV] public Borders _borders;
 
         /// <summary>
         /// Gets or sets the indent of the first line in the paragraph.
@@ -187,8 +186,7 @@ namespace MigraDoc.DocumentObjectModel
             get { return _firstLineIndent; }
             set { _firstLineIndent = value; }
         }
-        [DV]
-        internal Unit _firstLineIndent = Unit.NullValue;
+        [DV] public Unit _firstLineIndent = Unit.NullValue;
 
         /// <summary>
         /// Gets or sets the Font object.
@@ -272,8 +270,7 @@ namespace MigraDoc.DocumentObjectModel
                 _listInfo = value;
             }
         }
-        [DV]
-        internal ListInfo _listInfo;
+        [DV] public ListInfo _listInfo;
 
         /// <summary>
         /// Gets or sets the out line level of the paragraph.
@@ -283,8 +280,7 @@ namespace MigraDoc.DocumentObjectModel
             get { return (OutlineLevel)_outlineLevel.Value; }
             set { _outlineLevel.Value = (int)value; }
         }
-        [DV(Type = typeof(OutlineLevel))]
-        internal NEnum _outlineLevel = NEnum.NullValue(typeof(OutlineLevel));
+        [DV(Type = typeof(OutlineLevel))] public NEnum _outlineLevel = NEnum.NullValue(typeof(OutlineLevel));
 
         /// <summary>
         /// Gets or sets a value indicating whether a page break is inserted before the paragraph.
@@ -320,8 +316,7 @@ namespace MigraDoc.DocumentObjectModel
                 _shading = value;
             }
         }
-        [DV]
-        internal Shading _shading;
+        [DV] public Shading _shading;
 
         /// <summary>
         /// Gets or sets the space that's inserted after the paragraph.
@@ -331,8 +326,7 @@ namespace MigraDoc.DocumentObjectModel
             get { return _spaceAfter; }
             set { _spaceAfter = value; }
         }
-        [DV]
-        internal Unit _spaceAfter = Unit.NullValue;
+        [DV] public Unit _spaceAfter = Unit.NullValue;
 
         /// <summary>
         /// Gets or sets the space that's inserted before the paragraph.

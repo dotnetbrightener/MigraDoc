@@ -78,8 +78,7 @@ namespace MigraDoc.DocumentObjectModel
             get { return _visible.Value; }
             set { _visible.Value = value; }
         }
-        [DV]
-        internal NBool _visible = NBool.NullValue;
+        [DV] public NBool _visible = NBool.NullValue;
 
         /// <summary>
         /// Gets or sets the shading color.
@@ -89,8 +88,7 @@ namespace MigraDoc.DocumentObjectModel
             get { return _color; }
             set { _color = value; }
         }
-        [DV]
-        internal Color _color = Color.Empty;
+        [DV] public Color _color = Color.Empty;
 
         /// <summary>
         /// Gets the information if the shading is marked as cleared. Additionally 'Shading = null'

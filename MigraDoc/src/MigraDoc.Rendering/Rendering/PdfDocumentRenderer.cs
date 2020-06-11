@@ -316,7 +316,7 @@ namespace MigraDoc.Rendering
         PdfDocument CreatePdfDocument()
         {
             PdfDocument document = new PdfDocument();
-            document.Info.Creator = VersionInfo.Creator;
+            //document.Info.Creator = VersionInfo.Creator;
             if (!String.IsNullOrEmpty(_language))
                 document.Language = _language;
             return document;

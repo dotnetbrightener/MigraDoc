@@ -106,8 +106,7 @@ namespace MigraDoc.DocumentObjectModel.Shapes
             get { return _scaleWidth.Value; }
             set { _scaleWidth.Value = value; }
         }
-        [DV]
-        internal NDouble _scaleWidth = NDouble.NullValue;
+        [DV] public NDouble _scaleWidth = NDouble.NullValue;
 
         /// <summary>
         /// Gets or sets the ScaleHeight of the image.
@@ -118,8 +117,7 @@ namespace MigraDoc.DocumentObjectModel.Shapes
             get { return _scaleHeight.Value; }
             set { _scaleHeight.Value = value; }
         }
-        [DV]
-        internal NDouble _scaleHeight = NDouble.NullValue;
+        [DV] public NDouble _scaleHeight = NDouble.NullValue;
 
         /// <summary>
         /// Gets or sets whether the AspectRatio of the image is kept unchanged.
@@ -130,8 +128,7 @@ namespace MigraDoc.DocumentObjectModel.Shapes
             get { return _lockAspectRatio.Value; }
             set { _lockAspectRatio.Value = value; }
         }
-        [DV]
-        internal NBool _lockAspectRatio = NBool.NullValue;
+        [DV] public NBool _lockAspectRatio = NBool.NullValue;
 
         /// <summary>
         /// Gets or sets the PictureFormat for the image
@@ -145,8 +142,7 @@ namespace MigraDoc.DocumentObjectModel.Shapes
                 _pictureFormat = value;
             }
         }
-        [DV]
-        internal PictureFormat _pictureFormat;
+        [DV] public PictureFormat _pictureFormat;
 
         /// <summary>
         /// Gets or sets a user defined resolution for the image in dots per inch.
@@ -156,8 +152,7 @@ namespace MigraDoc.DocumentObjectModel.Shapes
             get { return _resolution.Value; }
             set { _resolution.Value = value; }
         }
-        [DV]
-        internal NDouble _resolution = NDouble.NullValue;
+        [DV] public NDouble _resolution = NDouble.NullValue;
         //#endregion
 
         #region Internal

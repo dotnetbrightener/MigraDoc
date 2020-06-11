@@ -172,8 +172,7 @@ namespace MigraDoc.DocumentObjectModel.Shapes.Charts
             get { return _height; }
             set { _height = value; }
         }
-        [DV]
-        internal Unit _height = Unit.NullValue;
+        [DV] public Unit _height = Unit.NullValue;
 
         /// <summary>
         /// Gets or sets the width of the area.
@@ -183,8 +182,7 @@ namespace MigraDoc.DocumentObjectModel.Shapes.Charts
             get { return _width; }
             set { _width = value; }
         }
-        [DV]
-        internal Unit _width = Unit.NullValue;
+        [DV] public Unit _width = Unit.NullValue;
 
         /// <summary>
         /// Gets or sets the default style name of the area.
@@ -194,8 +192,7 @@ namespace MigraDoc.DocumentObjectModel.Shapes.Charts
             get { return _style.Value; }
             set { _style.Value = value; }
         }
-        [DV]
-        internal NString _style = NString.NullValue;
+        [DV] public NString _style = NString.NullValue;
 
         /// <summary>
         /// Gets or sets the default paragraph format of the area.
